@@ -1,0 +1,10 @@
+.form {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+button {
+    margin: 25px auto;
+    width: 12rem;
+    background-color: rgb(10, 190, 245);
+}
