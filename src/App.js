@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Form from "./components/Form";
 
 function App() {
 	return (
@@ -9,6 +10,9 @@ function App() {
 						{" "}
 						<h1 className="text-center">Lyrics Finder</h1>{" "}
 					</div>
+				</div>
+				<div className="row">
+					<Form />
 				</div>
 			</div>
 		</Fragment>
