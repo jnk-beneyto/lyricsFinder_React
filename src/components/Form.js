@@ -21,8 +21,14 @@ const Form = ({ setAllData }) => {
 		setError(false);
 
 		//set Correct data
-		setAllData({ artist, song });
-		console.log({ artist, song });
+		setAllData({
+			artist,
+			song
+		});
+		console.log({
+			artist,
+			song
+		});
 	};
 
 	return (
@@ -33,8 +39,8 @@ const Form = ({ setAllData }) => {
 						<div className="col-md-4 ">
 							<div className="form-group mb-2">
 								<label htmlFor="inputArtista" className="col-form-label">
-									Artista
-								</label>
+									Artista{" "}
+								</label>{" "}
 								<input
 									type="text"
 									className="form-control"
@@ -43,14 +49,14 @@ const Form = ({ setAllData }) => {
 									name="artist"
 									onChange={e => setArtist(e.target.value)}
 									value={artist}
-								/>
-							</div>
-						</div>
+								/>{" "}
+							</div>{" "}
+						</div>{" "}
 						<div className="col-md-4 ">
 							<div className="form-group mb-2">
 								<label htmlFor="inputCancion" className="col-form-label">
-									Canción
-								</label>
+									Canción{" "}
+								</label>{" "}
 								<input
 									type="text"
 									className="form-control"
@@ -59,24 +65,23 @@ const Form = ({ setAllData }) => {
 									name="song"
 									onChange={e => setSong(e.target.value)}
 									value={song}
-								/>
-							</div>
-						</div>
+								/>{" "}
+							</div>{" "}
+						</div>{" "}
 						<div className="col-md-4 d-flex">
-							<div className="container">
-								<button className="btn" type="submit">
-									Buscar
-								</button>
-							</div>
+							<button className="btn" type="submit">
+								Buscar
+							</button>
 						</div>
 					</div>
 				</form>
 			</div>
 			<div className="row justify-content-center">
 				<div className="col-md-4">
-					{error ? <Error message="rellena todo" /> : null}
-				</div>
-			</div>
+					{" "}
+					{error ? <Error message="rellena todo" /> : null}{" "}
+				</div>{" "}
+			</div>{" "}
 		</Fragment>
 	);
 };

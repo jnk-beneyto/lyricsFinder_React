@@ -4,7 +4,6 @@ import Lyrics from "./components/Lyrics";
 import Band from "./components/Band";
 import Error from "./components/Error";
 import axios from "axios";
-// import styled from "@emotion/styled";
 
 function App() {
 	// setting var states
